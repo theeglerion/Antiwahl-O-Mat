@@ -1,0 +1,38 @@
+#site-container {
+    margin: 0px auto;
+    zoom: 1;
+    /*width: 1000px;*/
+    display: table;
+}
+
+body {
+    background-image: url('../bg/background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur();
+    background-attachment: fixed;
+    background-position:center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-stretch: ultra-condensed;
+}
+
+header {
+    margin-left: 15%;
+    margin-top: 5.5%;
+    text-align:left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 700%;    
+    color: #ffd800;
+}
+
+span {
+    font: Arial, sans-serif;
+    font-size: 80%;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
