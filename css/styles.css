@@ -15,7 +15,7 @@ body {
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-stretch: ultra-condensed;
 }
@@ -25,7 +25,7 @@ header {
     margin-top: 5.5%;
     text-align:left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 700%;    
+    font-size: 420%;    
     color: #ffd800;
 }
 

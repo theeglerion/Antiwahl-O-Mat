@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Antiwahl-O-Mat</title>
-    <script>
-        document.documentElement.className = 'js';
+    <script type="text/javascript" src="js/generator.js">    
     </script>
     <link rel="stylesheet" href="css/styles.css" />
     <style>
@@ -16,9 +15,8 @@
             <header>
                 Antiwahl-O-Mat<sup><span>&copy;</span></sup> 
             </header>
-            
-            <p>Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</p>
-
+            <button type="button" value="submit" id="bntScript" onclick="document.getElementById('para').innerHTML = generate()">Wen soll ich wählen?</button>                       
+            <p id="para">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</p>
         </div>
     </body>
 </html>

@@ -22,5 +22,10 @@ const parties = ["CDU",
         "Die Humanisten",
         "Team Todenhöfer",
         "Volt"];
+
+function generate(){
+        var rnd = parties[Math.floor(Math.random()*parties.length)];
+        return rnd;
+}
  
-var rnd = parties[Math.floor(Math.random()*parties.length-1)];
+
