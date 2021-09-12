@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2880" height="1800" viewBox="0 0 2880 1800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #131313;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        opacity: 0.32;
+        mix-blend-mode: exclusion;
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2966.48" y1="-101.938" x2="653.086" y2="1298" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0b0b"/>
+      <stop offset="1" stop-color="#3b3b3b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1100.711" x2="1779.289" y2="1298" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#12100b"/>
+    </linearGradient>
+  </defs>
+  <rect id="Farbfüllung_1" data-name="Farbfüllung 1" class="cls-1" width="2880" height="1800"/>
+  <path id="Verlaufsfüllung_1" data-name="Verlaufsfüllung 1" class="cls-2" d="M2997.17,43.459Q2944,508.884,2890.8,974.4,1756.725,1136.189,622.41,1298c0.776-.92,1.552-1.84,2.327-2.75q549.8-698.535,1099.713-1397.2Z"/>
+  <path id="Verlaufsfüllung_2" data-name="Verlaufsfüllung 2" class="cls-3" d="M0,0H2880V1298h-1L0,294V0Z"/>
+</svg>
