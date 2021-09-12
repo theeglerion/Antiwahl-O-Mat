@@ -7,16 +7,36 @@
     </script>
     <link rel="stylesheet" href="css/styles.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@400;700&display=swap');
-    </style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    </style> 
 </head>
     <body>
         <div class="#site-container">
             <header>
                 Antiwahl-O-Mat<sup><span>&copy;</span></sup> 
             </header>
-            <button type="button" value="submit" id="bntScript" onclick="document.getElementById('para').innerHTML = generate()">Wen soll ich wählen?</button>                       
+
+            <button type="button" class="button button-1" id="bntScript" onclick="document.getElementById('para').innerHTML = generate()">Wen soll ich wählen?</button>                       
             <p id="para">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</p>
+
+            <ul id="q1"><div class="ultext">Nazis sollen meine Stimme erhalten.</div>
+                <div class="rad">
+                    <input type="radio" id="r1yes" name="n1" value="yes">
+                    <label for="r1y"> stimme zu</label>
+                </div>
+                <div class="rad">
+                    <input type="radio" id="r1neu" name="n1" value="neutral">
+                    <label for="r1neu"> neutral</label>
+                </div>
+                <div class="rad">
+                    <input type="radio" id="r1no" name="n1" value="yes">
+                    <label for="r1no"> stimme nicht zu</label>
+                </div>       
+            </ul>
+
+            <footer>
+                copyleft 2021<span>&copy</span>
+            </footer>
         </div>
     </body>
 </html>
