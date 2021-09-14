@@ -15,7 +15,7 @@ Fällt eure Auswahl lieber aufgrund der Wahlprogramme der jeweiligen Par
 Der Autor dieser Seite übernimmt keine Haftung für eure Zukunft!
 
 
-Links die euch Weiterhelfen:
+Links die euch weiterhelfen:
 </br>
 <a href="https://www.bundestag.de/abstimmung">
 Abstimmungen im Bundestag
