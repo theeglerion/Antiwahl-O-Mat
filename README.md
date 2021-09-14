@@ -19,12 +19,15 @@ Links die euch Weiterhelfen:
 <a href="https://www.bundestag.de/abstimmung">
 Abstimmungen im Bundestag
 </a>
+
 <a href="https://www.abgeordnetenwatch.de/">
 abgeordnetenwatch
 </a>
+
 <a href="https://www.bpb.de/">
 Bundeszentrale für politische Bildung
 </a>
+
 <a href="https://www.wahl-o-mat.de/">
 Der echte Wahl-O-Mat
 </a>
