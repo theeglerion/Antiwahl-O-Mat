@@ -17,56 +17,56 @@
 
 <body>
     <div class="#site-container">
-        <div class="mleft">
-            <header>
-                Antiwahl-O-Mat<sup><span>&copy;</span></sup>
-            </header>
+        <header class="mleft">
+            Antiwahl-O-Mat<sup><span>&copy;</span></sup>
+            <h2>Bundestagswahl 2021</h2>
+        </header>
 
-            <button type="button" class="button button-1" id="bntScript" onclick="document.getElementById('para').innerHTML = generate()">
+        <button type="button" class="button button-1" id="bntScript" onclick="document.getElementById('result').innerHTML = generate()">
                 Wen soll ich wählen?
             </button>
-            <p id="para">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!
-            </p>
 
-            <div id="box1" class="box">
-                <h1>Nazis sollen meine Simme erhalten.</h1>
-                <ul id="q1" class="unselectable ulmargin">
-                    <li>
-                        <input type="radio" id="r1yes" name="r1" value="yes">
-                        <label for="r1yes">stimme zu</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="r1neu" name="r1" value="neutral">
-                        <label for="r1neu">neutral</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="r1no" name="r1" value="no" checked="true">
-                        <label for="r1no">stimme nicht zu</label>
-                    </li>
-                </ul>
-            </div>
-            <div id="box2" class="box">
-                <h1>Es solle keine weiere Partei im Bundes Tag</h1>
-                <ul id="q2" class="unselectable">
-                    <li>
-                        <input type="radio" id="r2yes" name="r2" value="yes">
-                        <label for="r2yes">stimme zu</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="r2neu" name="r2" value="neutral">
-                        <label for="r2neu">neutral</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="r2no" name="r2" value="no">
-                        <label for="r2no">stimme nicht zu</label>
-                    </li>
-                </ul>
-            </div>
+        <div id="result">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</div>
+
+        <div id="box1" class="box mleft">
+            <h1>Nazis sollen meine Simme erhalten.</h1>
+            <ul id="q1" class="unselectable ulmargin">
+                <li>
+                    <input type="radio" id="r1yes" name="r1" value="yes">
+                    <label for="r1yes">stimme zu</label>
+                </li>
+                <li>
+                    <input type="radio" id="r1neu" name="r1" value="neutral">
+                    <label for="r1neu">neutral</label>
+                </li>
+                <li>
+                    <input type="radio" id="r1no" name="r1" value="no" checked="true">
+                    <label for="r1no">stimme nicht zu</label>
+                </li>
+            </ul>
         </div>
+        <div id="box2" class="box">
+            <h1>Es soll keine weitere Partei in den Bundestag einziehen.</h1>
+            <ul id="q2" class="unselectable">
+                <li>
+                    <input type="radio" id="r2yes" name="r2" value="yes">
+                    <label for="r2yes">stimme zu</label>
+                </li>
+                <li>
+                    <input type="radio" id="r2neu" name="r2" value="neutral">
+                    <label for="r2neu">neutral</label>
+                </li>
+                <li>
+                    <input type="radio" id="r2no" name="r2" value="no" checked="true">
+                    <label for="r2no">stimme nicht zu</label>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-        <footer>
-            copyleft 2021<span>&copy</span>
-        </footer>
+    <footer>
+        copyleft 2021<span>&copy</span>
+    </footer>
 
 </body>
 
