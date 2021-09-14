@@ -1,19 +1,18 @@
 #site-container {
     margin: 0px auto;
-    zoom: 1;
     display: table;
-} 
+}
 
 body {
     background-image: url('../bg/background.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:center;
+    background-position: center;
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1;
@@ -21,26 +20,26 @@ body {
 }
 
 header {
-    margin-left: 12%;
     margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
-    text-align:left;
+    margin-left: 2%;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 330%;
-    font-weight: 600;   
+    font-weight: 600;
     color: #ecaf08;
 }
 
 footer {
- position: fixed;
- font-size: 40%;
- font-weight: lighter;
- bottom: 0;
- text-align: center;
- background: black;
- width: 100%;
- padding: 5px 5px;
+    position: fixed;
+    font-size: 40%;
+    font-weight: lighter;
+    bottom: 0;
+    text-align: center;
+    background: black;
+    width: 100%;
+    padding: 5px 5px;
 }
 
 footer::after {
@@ -54,23 +53,23 @@ span {
     transform: rotate(180deg);
 }
 
-button {    
+button {
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-size: inherit;
     color: inherit;
     background: none;
     cursor: pointer;
-    padding: auto;
     display: inline-block;
     letter-spacing: 1px;
-    font-weight: 800;
+    font-weight: 600;
     outline: none;
-    position: relative; 
+    position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     padding: 20px 60px;
+    margin: initial;
 }
 
 button:after {
@@ -87,13 +86,13 @@ button:before {
 }
 
 .button-1 {
-    background:black;
+    background: black;
     color: #ecaf08;
     font-size: 80%;
 }
 
 .button-1:hover {
-    background: #ecaf08 ;
+    background: #ecaf08;
     color: black;
 }
 
@@ -102,40 +101,108 @@ button:before {
     background-color: #918962;
 }
 
-ul{
-    text-align: left;
-    letter-spacing: -1;
-    width: 270px;
+.box {
+    position: relative;
+    width: 300px;
+    height: 190px;
     background: #ecaf08;
     color: black;
+    text-align: left;
+    letter-spacing: -1;
     padding: 8px 20px;
-    margin-left: 12%;
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+}
+
+.box:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #ecaf08;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #ecaf08;
+    border-bottom: 20px solid transparent;
+    bottom: -15%;
+    left: 20%;
+}
+
+.box:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    width: 95%;
+    padding: 1px;
+    align-content: left;
+    list-style: none;
     border: none;
-    
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50%;
+}
+
+li {
+    background: white;
+    font-size: 80%;
+    font-weight: 600;
+    padding: 5px 5px;
+    border: #ecaf08;
+    border-style: solid;
+    border-width: medium;
+    color: black;
+    float: left;
+    width: 100%;
+    padding: auto;
+}
+
+li:hover {
+    background: black;
+    color: white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    position: absolute;
+    padding: 0;
+    margin-top: 2%;
+    font-size: 50%;
+    font-weight: 400;
+    overflow: visible;
+    float: left;
+}
+
+h2 {
+    font-size: 25%;
+    color: white;
+}
+
+#result {
+    padding: 10px 10px;
+}
+
+.mleft {
+    margin-left: 15%;
 }
 
 * {
     padding: 0;
     margin: 0 auto;
-} 
-
-.ultext {
-    font-size: 55%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.rad {
-    background: white;
-    font-size: 40%;
-    font-weight: 600;
-    padding: 5px 5px; 
-    border: #ecaf08;
-    border-style: solid;
-    border-width: medium;
-    color: black;
-}
-
-.rad:hover{
-    background: #ffeb86;
 }
