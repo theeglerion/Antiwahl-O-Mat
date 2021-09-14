@@ -24,15 +24,60 @@ const parties = ["CDU",
     "Volt"
 ];
 
+const partiesIn = ["CDU",
+    "DIE LINKE",
+    "SPD",
+    "GRÜNE",
+    "AfD",
+    "FDP"
+];
+
 function generate() {
 
     let result = "";
     var radio1 = document.querySelector('[name="r1"]:checked').value;
+    var radio2 = document.querySelector('[name="r2"]:checked').value;
 
     switch (radio1) {
 
         case "yes":
             window.open("https://www.exit-deutschland.de/");
+            break;
+
+        case "neutral":
+            result = checkBundestag(radio2);
+            break;
+
+        case "no":
+            while (result == "") {
+                result = checkBundestag(radio2);
+
+                if (result == 'NPD' || result == 'AfD') {
+                    result = "";
+                }
+            }
+            break;
+    }
+
+    console.log(result);
+    return result;
+}
+
+function checkBundestag(radio) {
+
+    var r = radio;
+    var result = "";
+
+    switch (r) {
+
+        case "yes":
+            while (result == "") {
+                result = parties[Math.floor(Math.random() * parties.length)];
+
+                if (!partiesIn.includes(result)) {
+                    result = "";
+                }
+            }
             break;
 
         case "neutral":
@@ -43,14 +88,12 @@ function generate() {
             while (result == "") {
                 result = parties[Math.floor(Math.random() * parties.length)];
 
-                if (result == 'NPD' || result == 'AfD') {
+                if (partiesIn.includes(result)) {
                     result = "";
                 }
             }
             break;
     }
-
-    console.log(result);
     return result;
 }
 
