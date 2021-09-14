@@ -16,18 +16,20 @@ Der Autor dieser Seite übernimmt keine Haftung für eure Zukunft!
 
 
 Links die euch Weiterhelfen:
+</br>
 <a href="https://www.bundestag.de/abstimmung">
 Abstimmungen im Bundestag
 </a>
-
+</br>
 <a href="https://www.abgeordnetenwatch.de/">
 abgeordnetenwatch
 </a>
-
+</br>
 <a href="https://www.bpb.de/">
 Bundeszentrale für politische Bildung
 </a>
-
+</br>
 <a href="https://www.wahl-o-mat.de/">
 Der echte Wahl-O-Mat
 </a>
+</br>
