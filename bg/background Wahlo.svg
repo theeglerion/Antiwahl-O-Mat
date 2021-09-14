@@ -15,13 +15,14 @@
       }
 
       .cls-3 {
-        opacity: 0.16;
+        opacity: 0.29;
+        mix-blend-mode: exclusion;
         fill: url(#linear-gradient-2);
       }
     </style>
-    <linearGradient id="linear-gradient" x1="3035" y1="-247.821" x2="1122" y2="909.821" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0b0b0b"/>
-      <stop offset="1" stop-color="#3b3b3b"/>
+    <linearGradient id="linear-gradient" x1="2335.2" y1="1764" x2="1829.8" y2="-369" gradientUnits="userSpaceOnUse">
+      <stop offset="-3.95" stop-color="#0b0b0b"/>
+      <stop offset="4.95" stop-color="#3b3b3b"/>
     </linearGradient>
     <linearGradient id="linear-gradient-2" x1="1100.711" x2="1779.289" y2="1298" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
@@ -29,6 +30,6 @@
     </linearGradient>
   </defs>
   <rect id="Farbfüllung_1" data-name="Farbfüllung 1" class="cls-1" width="2880" height="1800"/>
-  <path id="Verlaufsfüllung_1" data-name="Verlaufsfüllung 1" class="cls-2" d="M2850.74-693.009q94.05,444.48,184.25,870.848C2432.32,548.687,1796.55,939.9,1121.99,1354.99c0.4-1.14.8-2.29,1.21-3.44q268.935-856.174,540.59-1720.958Q2281.805-537.9,2850.74-693.009Z"/>
+  <path id="Verlaufsfüllung_1" data-name="Verlaufsfüllung 1" class="cls-2" d="M2963.73-369.01q107.325,462.929,210.26,906.992c-687.73,386.239-1413.23,793.688-2183,1226.008,0.461-1.19.921-2.39,1.382-3.58q306.9-891.72,616.893-1792.387Q2314.5-207.46,2963.73-369.01Z"/>
   <path id="Verlaufsfüllung_2" data-name="Verlaufsfüllung 2" class="cls-3" d="M0,0H2880V1298h-1L0,294V0Z"/>
 </svg>

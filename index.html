@@ -1,42 +1,73 @@
 <!doctype html>
 <html class="no-js" lang="de-de">
+
 <head>
     <meta charset="UTF-8">
     <title>Antiwahl-O-Mat</title>
-    <script type="text/javascript" src="js/generator.js">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/generator.js">
     </script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="Icon.svg" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-    </style> 
+    </style>
 </head>
-    <body>
-        <div class="#site-container">
-            <header>
-                Antiwahl-O-Mat<sup><span>&copy;</span></sup> 
-            </header>
 
-            <button type="button" class="button button-1" id="bntScript" onclick="document.getElementById('para').innerHTML = generate()">Wen soll ich wählen?</button>                       
-            <p id="para">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</p>
+<body>
+    <div class="#site-container">
+        <header class="mleft">
+            Antiwahl-O-Mat<sup><span>&copy;</span></sup>
+            <h2>Bundestagswahl 2021</h2>
+        </header>
 
-            <ul id="q1"><div class="ultext">Nazis sollen meine Stimme erhalten.</div>
-                <div class="rad">
-                    <input type="radio" id="r1yes" name="n1" value="yes">
-                    <label for="r1y"> stimme zu</label>
-                </div>
-                <div class="rad">
-                    <input type="radio" id="r1neu" name="n1" value="neutral">
-                    <label for="r1neu"> neutral</label>
-                </div>
-                <div class="rad">
-                    <input type="radio" id="r1no" name="n1" value="yes">
-                    <label for="r1no"> stimme nicht zu</label>
-                </div>       
+        <button type="button" class="button button-1" id="bntScript" onclick="document.getElementById('result').innerHTML = generate()">
+                Wen soll ich wählen?
+            </button>
+
+        <div id="result">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</div>
+
+        <div id="box1" class="box mleft">
+            <h1>Nazis sollen meine Simme erhalten.</h1>
+            <ul id="q1" class="unselectable ulmargin">
+                <li>
+                    <input type="radio" id="r1yes" name="r1" value="yes">
+                    <label for="r1yes">stimme zu</label>
+                </li>
+                <li>
+                    <input type="radio" id="r1neu" name="r1" value="neutral">
+                    <label for="r1neu">neutral</label>
+                </li>
+                <li>
+                    <input type="radio" id="r1no" name="r1" value="no" checked="true">
+                    <label for="r1no">stimme nicht zu</label>
+                </li>
             </ul>
-
-            <footer>
-                copyleft 2021<span>&copy</span>
-            </footer>
         </div>
-    </body>
+        <div id="box2" class="box">
+            <h1>Es soll keine weitere Partei in den Bundestag einziehen.</h1>
+            <ul id="q2" class="unselectable">
+                <li>
+                    <input type="radio" id="r2yes" name="r2" value="yes">
+                    <label for="r2yes">stimme zu</label>
+                </li>
+                <li>
+                    <input type="radio" id="r2neu" name="r2" value="neutral">
+                    <label for="r2neu">neutral</label>
+                </li>
+                <li>
+                    <input type="radio" id="r2no" name="r2" value="no">
+                    <label for="r2no">stimme nicht zu</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        copyleft 2021<span>&copy</span>
+    </footer>
+
+</body>
+
 </html>
