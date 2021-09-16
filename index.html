@@ -2,31 +2,44 @@
 <html class="no-js" lang="de-de">
 
 <head>
-    <meta charset="UTF-8">
     <title>Antiwahl-O-Mat</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="Icon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
     <script type="text/javascript" src="js/generator.js">
     </script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="Icon.svg" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-    </style>
 </head>
 
-<body>
-    <div class="#site-container">
+<div class="#site-container">
+    <div id="top">
+        <a id="a-rep" class="icon-round" href="https://github.com/theeglerion/Antiwahl-O-Mat" target="_blank">
+            <i class="fa fa-github" style="font-size:28px"></i>
+        </a>
+    </div>
+
+    <body>
         <header class="mleft">
-            Antiwahl-O-Mat<sup><span>&copy;</span></sup>
+            Antiwahl-O-Mat<sup><span class="copyleft">&copy;</span></sup>
             <h2>Bundestagswahl 2021</h2>
         </header>
 
-        <button type="button" class="button button-1" id="bntScript" onclick="document.getElementById('result').innerHTML = generate()">
-                Wen soll ich wählen?
-            </button>
+        <button type="button" class="button button-1" id="bntScript"
+            onclick="document.getElementById('result').innerHTML = generate()">
+            Wen soll ich wählen?
+        </button>
 
-        <div id="result">Der Antiwahl-O-Mat<sup><span>&copy;</span></sup> ist bald verfügbar!</div>
+        <p>
+        <div id="result" class="">Dein Ergebnis....</div>
+        </p>
 
         <div id="box1" class="box mleft">
             <h1>Nazis sollen meine Simme erhalten.</h1>
@@ -45,6 +58,7 @@
                 </li>
             </ul>
         </div>
+
         <div id="box2" class="box">
             <h1>Es soll keine weitere Partei in den Bundestag einziehen.</h1>
             <ul id="q2" class="unselectable">
@@ -62,11 +76,10 @@
                 </li>
             </ul>
         </div>
-    </div>
+</div>
 
-    <footer>
-        copyleft 2021<span>&copy</span>
-    </footer>
+<footer>copyleft 2021<span class="copyleft">&copy</span>
+</footer>
 
 </body>
 
